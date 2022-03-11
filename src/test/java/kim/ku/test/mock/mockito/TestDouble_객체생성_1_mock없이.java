@@ -1,5 +1,6 @@
-package kim.ku.mock.mockito;
+package kim.ku.test.mock.mockito;
 
+import kim.ku.test.mock.mockito.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

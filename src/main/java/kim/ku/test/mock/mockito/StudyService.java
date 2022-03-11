@@ -1,7 +1,4 @@
-package kim.ku.mock.mockito;
-
-import java.util.List;
-import java.util.Optional;
+package kim.ku.test.mock.mockito;
 
 public class StudyService {
 

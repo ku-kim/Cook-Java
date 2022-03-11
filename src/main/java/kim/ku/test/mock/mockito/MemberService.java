@@ -1,4 +1,4 @@
-package kim.ku.mock.mockito;
+package kim.ku.test.mock.mockito;
 
 import java.util.Optional;
 

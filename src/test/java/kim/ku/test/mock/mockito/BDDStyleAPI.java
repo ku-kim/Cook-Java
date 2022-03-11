@@ -1,5 +1,9 @@
-package kim.ku.mock.mockito;
+package kim.ku.test.mock.mockito;
 
+import kim.ku.test.mock.mockito.MemberService;
+import kim.ku.test.mock.mockito.Study;
+import kim.ku.test.mock.mockito.StudyRepository;
+import kim.ku.test.mock.mockito.StudyService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
