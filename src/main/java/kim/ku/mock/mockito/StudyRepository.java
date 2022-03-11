@@ -1,4 +1,11 @@
 package kim.ku.mock.mockito;
 
+import java.util.Optional;
+
 public interface StudyRepository {
+    Optional<Study> findByStudyId(String id);
+
+    void validate(String id);
+
+    void notify(String id);
 }

@@ -23,6 +23,23 @@ class TestDouble_객체생성_1_mock없이 {
     void 직접만들기() {
         studyRepository = new StudyRepository() {
             @Override
+            public Optional<Study> findByStudyId(String id) {
+                throw new UnsupportedOperationException("#findByStudyId 아직 구현하지 않음 !!");
+            }
+
+            @Override
+            public void validate(String id) {
+                throw new UnsupportedOperationException("#validate 아직 구현하지 않음 !!");
+
+            }
+
+            @Override
+            public void notify(String id) {
+                throw new UnsupportedOperationException("#notify 아직 구현하지 않음 !!");
+
+            }
+
+            @Override
             public String toString() {
                 return super.toString();
             }

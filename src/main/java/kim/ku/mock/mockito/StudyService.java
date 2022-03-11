@@ -1,5 +1,8 @@
 package kim.ku.mock.mockito;
 
+import java.util.List;
+import java.util.Optional;
+
 public class StudyService {
 
     private final StudyRepository studyRepository;
@@ -11,5 +14,11 @@ public class StudyService {
 
         this.studyRepository = studyRepository;
         this.memberService = memberService;
+    }
+
+    Study findStudy(String id) {
+        Study study = studyRepository.findByStudyId(id).orElse(new Study());
+        studyRepository.notify(id);
+        return study;
     }
 }
